@@ -59,9 +59,7 @@ class Upscaler:
         for i in range(3):
              # <<<<<< fix 1 fix upscaler x1 bug
             if i > 0: 
-                if scale == 1: 
-                    break 
-                if img.width >= dest_w and img.height >= dest_h and scale != 1: 
+                if img.width >= dest_w and img.height >= dest_h: 
                     break
             # >>>>>>>> org code
             # if img.width >= dest_w and img.height >= dest_h and (i > 0 or scale != 1):
